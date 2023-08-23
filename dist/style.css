@@ -12,14 +12,17 @@
 }
 
 :root {
-  --bg-color: #f4d160;
-  --second-bg-color: #fbeeac;
-  --text-color: #1d5d9b;
-  --main-color: #75c2f6;
+  --bg-color: #1d5d9b;
+  --second-bg-color: #75c2f6;
 }
 
 body {
   background: var(--second-bg-color);
+}
+
+main {
+  min-height: 100vh;
+  padding: 8rem 9% 0 9%;
 }
 
 .header {
@@ -34,4 +37,72 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+}
+
+.weather-info-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.weather-info-container img {
+  height: rem;
+  width: 20rem;
+  margin-right: 0.5rem;
+}
+
+.weather-info {
+  border: 1px solid black;
+  padding: 1rem;
+  margin-left: 2rem;
+}
+
+.weather-info .city {
+  font-size: 3.3rem;
+  font-weight: bold;
+}
+
+.weather-info .description {
+  font-size: 2.3rem;
+}
+
+.weather-info .temperature {
+  font-size: 2.3rem;
+}
+
+.weather-info .date {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+.weather-info .time {
+  font-size: 1.3rem;
+}
+
+.search-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 0.8rem;
+  margin-top: 1rem;
+  transition: 0.5s ease;
+  width: 70%;
+}
+
+.search-box input {
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  border-radius: 0.8rem;
+  width: 75%;
+}
+
+.search-box:hover {
+  box-shadow: 0 0 1rem var(--main-color);
+}
+
+.search-box img {
+  height: 1.5rem;
+  width: 1.5rem;
 }
