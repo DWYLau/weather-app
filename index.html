@@ -12,12 +12,30 @@
     </header>
 
     <main>
-      <div class="weather-info">
-        <div class="city"></div>
-        <div class="description"></div>
-        <div class="date"></div>
-        <div class="time"></div>
-        <div class="temperature"></div>
+      <div class="weather-info-container">
+        <img src="/images/sunny.svg" alt="weather" />
+        <div class="weather-info">
+          <div class="city">Manchester</div>
+          <div class="description">Sunny</div>
+          <div class="temperature">25</div>
+          <div class="date">Random Date</div>
+          <div class="time">10pm</div>
+          <div class="search-box">
+            <input
+              type="text"
+              name="location"
+              id="location"
+              placeholder="Location"
+            />
+            <img src="/images/search.svg" alt="search" />
+          </div>
+        </div>
+        <div class="weather-details-container">
+          <div class="feels-like">Feels like:</div>
+          <div class="humidity">Humidity:</div>
+          <div class="rain-chance">Chance of Rain:</div>
+          <div class="wind-speed">Wind Speed:</div>
+        </div>
       </div>
     </main>
   </body>
