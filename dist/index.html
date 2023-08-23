@@ -9,34 +9,59 @@
   <body>
     <header class="header">
       <h1>Weather App</h1>
+      <div class="location-search">
+        <input
+          type="text"
+          name="location"
+          id="location"
+          placeholder="Location"
+        />
+        <button type="button">Search</button>
+        <img src="/images/current-location.png" alt="current-location" />
+      </div>
     </header>
 
     <main>
       <div class="weather-info-container">
-        <img src="/images/sunny.svg" alt="weather" />
-        <div class="weather-info">
-          <div class="city">Manchester</div>
-          <div class="description">Sunny</div>
-          <div class="temperature">25</div>
-          <div class="date">Random Date</div>
-          <div class="time">10pm</div>
-          <div class="search-box">
-            <input
-              type="text"
-              name="location"
-              id="location"
-              placeholder="Location"
-            />
-            <img src="/images/search.svg" alt="search" />
+        <div class="weather-location">
+          <h1 id="city">Yokohama</h1>
+          <h2 id="region">Kanagawa</h2>
+          <h2 id="country">Japan</h2>
+        </div>
+
+        <div class="weather-details">
+          <div class="detail">
+            <h2>Feels like (degrees)</h2>
+            <h1>10</h1>
+          </div>
+          <div class="detail">
+            <h2>Feels like (fahrenheit)</h2>
+            <h1>30</h1>
+          </div>
+          <div class="detail">
+            <h2>Precipitation</h2>
+            <h1>0</h1>
+          </div>
+          <div class="detail">
+            <h2>Humidity</h2>
+            <h1>90%</h1>
+          </div>
+          <div class="detail">
+            <h2>Wind Speed</h2>
+            <h1>15kph</h1>
+          </div>
+          <div class="detail">
+            <h2>Gust Speed</h2>
+            <h1>15kph</h1>
           </div>
         </div>
-        <div class="weather-details-container">
-          <div class="feels-like">Feels like:</div>
-          <div class="humidity">Humidity:</div>
-          <div class="rain-chance">Chance of Rain:</div>
-          <div class="wind-speed">Wind Speed:</div>
+
+        <div class="weather-display">
+          <img src="/images/sunny.svg" alt="weather-image" />
+          <h1>Partly Cloudy</h1>
         </div>
       </div>
     </main>
   </body>
+  <script src="main.js"></script>
 </html>

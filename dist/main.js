@@ -1,0 +1,1 @@
+(()=>{"use strict";!async function(){const a=await fetch("https://api.weatherapi.com/v1/current.json?key=9a625962efd24cb5afb11327232108&q=yokohama",{mode:"cors"}),o=await a.json();console.log(o)}()})();
