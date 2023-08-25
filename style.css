@@ -14,7 +14,6 @@
 :root {
   --bg-color: #1d5d9b;
   --second-bg-color: #75c2f6;
-  --text-color: #f6f4eb;
   --main-color: #bee9ff;
 }
 
@@ -34,7 +33,6 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--text-color);
 }
 
 .location-search {
@@ -117,6 +115,7 @@ main {
   border-radius: 1rem;
   transition: ease 0.5s;
   background-color: var(--main-color);
+  padding: 0rem 0rem 0rem 1rem;
 }
 
 .weather-left:hover {
@@ -126,7 +125,7 @@ main {
 .weather-location {
   display: flex;
   flex-direction: column;
-  padding: 3rem 2.5rem 1rem 2rem;
+  padding: 2.5rem 2.5rem 1rem 2rem;
   height: 100%;
 }
 
@@ -145,7 +144,7 @@ main {
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   flex-grow: 1;
-  padding: 3rem 2rem 1rem 2rem;
+  padding: 2.5rem 2rem 1rem 2rem;
   height: 100%;
 }
 
@@ -180,7 +179,81 @@ main {
   font-size: 2.5rem;
 }
 
+.weather-forecast {
+  background-color: var(--main-color);
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: 0.5s ease;
+}
+
+.weather-forecast:hover {
+  box-shadow: 0 0 1rem var(--main-color);
+}
+
+.weather-forecast h1 {
+  padding: 1rem 1rem 0.2rem 2rem;
+  font-size: 3rem;
+}
+
+.weather-cards {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+
+.weather-cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  min-width: 11rem;
+  background-color: var(--second-bg-color);
+  border-radius: 1rem;
+  transition: 0.5s ease;
+}
+
+.weather-cards .card:hover {
+  box-shadow: 0 0 1rem var(--bg-color);
+}
+
 .card img {
-  height: 4.5rem;
-  width: 4.5rem;
+  height: 4rem;
+  width: 4rem;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 70%;
+  }
+
+  .weather-cards .card {
+    padding: 0.5rem;
+  }
+
+  .weather-left {
+    height: 30vh;
+  }
+
+  .weather-display {
+    height: 30vh;
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 60%;
+  }
+
+  .weather-left {
+    height: 30vh;
+  }
+
+  .weather-display {
+    height: 30vh;
+  }
 }
