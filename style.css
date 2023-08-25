@@ -33,25 +33,39 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-height: 15vh;
 }
 
 .location-search {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20vw;
+  width: 30%;
+  min-height: 10vh;
   gap: 0.5rem;
 }
 
-.location-search input {
-  width: 70%;
+.search-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-box input {
+  width: 100%;
   height: 2.8rem;
   outline: none;
   padding: 0 0.5rem;
   font-size: 1.5rem;
   font-weight: bold;
   border-radius: 0.2rem;
-  transition: ease 0.5s;
+  transition: box-shadow ease 0.5s;
+}
+
+.search-box .error {
+  display: none;
+  padding-left: 0.3rem;
+  margin-top: 0.5rem;
+  color: rgb(160, 2, 2);
 }
 
 .location-search input:hover {
@@ -98,7 +112,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 36vh;
+  height: 32vh;
   width: 100%;
   outline: none;
 }
@@ -125,17 +139,18 @@ main {
 .weather-location {
   display: flex;
   flex-direction: column;
-  padding: 2.5rem 2.5rem 1rem 2rem;
+  padding: 2.5rem 2.5rem 0 2rem;
   height: 100%;
 }
 
 .weather-location h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: bolder;
 }
 
-.weather-location h2 {
-  font-size: 3rem;
+.weather-location h3 {
+  margin-top: 0.7rem;
+  font-size: 1.3rem;
   font-weight: bold;
 }
 
@@ -144,12 +159,12 @@ main {
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   flex-grow: 1;
-  padding: 2.5rem 2rem 1rem 2rem;
+  padding: 2.5rem 2rem 0 2rem;
   height: 100%;
 }
 
 .detail h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .weather-display {
@@ -192,7 +207,7 @@ main {
 }
 
 .weather-forecast h1 {
-  padding: 1rem 1rem 0.2rem 2rem;
+  padding: 0rem 1rem 0.2rem 2rem;
   font-size: 3rem;
 }
 

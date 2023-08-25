@@ -10,13 +10,16 @@
     <header class="header">
       <h1>Weather App</h1>
       <div class="location-search">
-        <input
-          type="text"
-          name="location"
-          id="location"
-          placeholder="Location"
-        />
-        <button type="button">Search</button>
+        <div class="search-box">
+          <input
+            type="text"
+            name="location"
+            id="location"
+            placeholder="Location"
+          />
+          <div class="error">Cannot find location</div>
+        </div>
+        <button id="search" type="button">Search</button>
         <img src="/images/current-location.png" alt="current-location" />
       </div>
     </header>
@@ -26,8 +29,8 @@
         <div class="weather-left">
           <div class="weather-location">
             <h1 id="city">Yokohama</h1>
-            <h2 id="region">Kanagawa</h2>
-            <h2 id="country">Japan</h2>
+            <h1 id="country">Japan</h1>
+            <h3 id="date">Tuesday 10th September</h3>
           </div>
 
           <div class="weather-details">
