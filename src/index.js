@@ -1,3 +1,3 @@
-import { getWeather } from "./weather.js";
+import { loadFunctions } from "./interface.js";
 
-getWeather();
+loadFunctions();
