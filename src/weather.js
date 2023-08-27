@@ -3,6 +3,7 @@ import {
   displayError,
   removeError,
   changeDate,
+  changeWeatherInfo,
 } from "./interface.js";
 
 const API_KEY = "226dbf12f6c9f3e021556ea66e7c95c9";
@@ -29,6 +30,7 @@ async function getWeatherData(latency, longitude, API) {
 
 function filterForecastData(data) {
   changeDate(data.list[0].dt_txt);
+  changeWeatherInfo(data);
   console.log(data);
   let uniqueForecastDays = [];
   const sevenForecastDays = data.list.filter((forecast) => {
