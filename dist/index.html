@@ -20,7 +20,7 @@
           <div class="error">Cannot find location</div>
         </div>
         <button id="search" type="button">Search</button>
-        <img src="/images/current-location.png" alt="current-location" />
+        <img id="user-coords" src="/images/current-location.png" alt="current-location" />
       </div>
     </header>
 
@@ -29,104 +29,48 @@
         <div class="weather-left">
           <div class="weather-location">
             <h1 id="city">Yokohama</h1>
-            <h1 id="country">Japan</h1>
-            <h3 id="date"></h3>
+            <h1 id="country">JP</h1>
+            <h3 id="date">Date</h3>
           </div>
 
           <div class="weather-details">
             <div class="detail">
               <h2>Temperature</h2>
-              <h1 id="temp">10</h1>
+              <h1 id="temp"></h1>
             </div>
             <div class="detail">
               <h2>Feels like</h2>
-              <h1 id="feels-like">30</h1>
+              <h1 id="feels-like">/h1>
             </div>
             <div class="detail">
               <h2>Precipitation</h2>
-              <h1 id="precipitation">0</h1>
+              <h1 id="precipitation"></h1>
             </div>
             <div class="detail">
               <h2>Humidity</h2>
-              <h1 id="humidity">90%</h1>
+              <h1 id="humidity"></h1>
             </div>
             <div class="detail">
               <h2>Wind Speed</h2>
-              <h1 id="wind-speed">15m/s</h1>
+              <h1 id="wind-speed"></h1>
             </div>
             <div class="detail">
               <h2>Gust Speed</h2>
-              <h1 id="gust-speed">15m/s</h1>
+              <h1 id="gust-speed"></h1>
             </div>
           </div>
         </div>
 
         <div class="weather-display">
-          <img id="weather-image" src="/images/sunny.svg" alt="weather-image" />
-          <h1 id="description">Partly Cloudy</h1>
+          <img id="weather-image" src="https://openweathermap.org/img/wn/01d@2x.png" alt="weather-image" />
+          <h1 id="description"></h1>
         </div>
       </div>
 
       <div class="weather-forecast">
-        <h1>7 Day Forecast</h1>
+        <h1>5 Day Forecast</h1>
 
-        <ul class="weather-cards">
-          <li class="card">
-            <h3>Monday</h3>
-            <img src="/images/sunny.svg" alt="weather" />
-            <h4>Temperature: 10</h4>
-            <h4>Humidity: 70%</h4>
-            <h4>Wind Speed: 15m/s</h4>
-          </li>
-
-          <li class="card">
-            <h3>Tuesday</h3>
-            <img src="/images/sunny.svg" alt="weather" />
-            <h4>Temperature: 20</h4>
-            <h4>Humidity: 70%</h4>
-            <h4>Wind Speed: 20m/s</h4>
-          </li>
-
-          <li class="card">
-            <h3>Wednesday</h3>
-            <img src="/images/sunny.svg" alt="weather" />
-            <h4>Temperature: 30</h4>
-            <h4>Humidity: 90%</h4>
-            <h4>Wind Speed: 30m/s</h4>
-          </li>
-
-          <li class="card">
-            <h3>Thursday</h3>
-            <img src="/images/sunny.svg" alt="weather" />
-            <h4>Temperature: 30</h4>
-            <h4>Humidity: 50%</h4>
-            <h4>Wind Speed: 20m/s</h4>
-          </li>
-
-          <li class="card">
-            <h3>Friday</h3>
-            <img src="/images/sunny.svg" alt="weather" />
-            <h4>Temperature: 30</h4>
-            <h4>Humidity: 60%</h4>
-            <h4>Wind Speed: 50m/s</h4>
-          </li>
-
-          <li class="card">
-            <h3>Saturday</h3>
-            <img src="/images/sunny.svg" alt="weather" />
-            <h4>Temperature: 40</h4>
-            <h4>Humidity: 90%</h4>
-            <h4>Wind Speed: m/s</h4>
-          </li>
-
-          <li class="card">
-            <h3>Sunday</h3>
-            <img src="/images/sunny.svg" alt="weather" />
-            <h4>Temperature: 50</h4>
-            <h4>Humidity: 60%</h4>
-            <h4>Wind Speed: m/s</h4>
-          </li>
-        </ul>
+        <ul class="weather-cards"></ul>
       </div>
     </main>
   </body>
