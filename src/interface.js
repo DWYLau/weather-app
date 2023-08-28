@@ -17,7 +17,7 @@ const weatherCardDiv = document.querySelector(".weather-cards");
 const error = document.querySelector(".error");
 
 function setDefaultCity() {
-  const GEOCODING_API = `http://api.openweathermap.org/geo/1.0/direct?q=Yokohama&limit=5&appid=${API_KEY}`;
+  const GEOCODING_API = `https://api.openweathermap.org/geo/1.0/direct?q=Yokohama&limit=5&appid=${API_KEY}`;
   getCityData(GEOCODING_API);
 }
 
@@ -25,7 +25,7 @@ function searchCity() {
   search.addEventListener("click", function () {
     const cityName = location.value.trim();
     if (!cityName) return;
-    const GEOCODING_API = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=5&appid=${API_KEY}`;
+    const GEOCODING_API = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=5&appid=${API_KEY}`;
     getCityData(GEOCODING_API);
   });
 }

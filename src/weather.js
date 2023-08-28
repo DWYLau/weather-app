@@ -25,7 +25,7 @@ async function getCityData(API) {
 }
 
 async function getWeatherData(latitude, longitude, API) {
-  const FORECAST_API = `http://api.openweathermap.org/data/2.5/forecast/?lat=${latitude}&lon=${longitude}&appid=${API}&units=metric`;
+  const FORECAST_API = `https://api.openweathermap.org/data/2.5/forecast/?lat=${latitude}&lon=${longitude}&appid=${API}&units=metric`;
   const response = await fetch(FORECAST_API, { mode: "cors" });
   const weatherData = await response.json();
   filterForecastData(weatherData);
@@ -35,7 +35,7 @@ function getUserCoordinates() {
   navigator.geolocation.getCurrentPosition(
     (position) => {
       const { latitude, longitude } = position.coords;
-      const REVERSE_GEOCODING_URL = `http://api.openweathermap.org/geo/1.0/reverse?lat=${latitude}&lon=${longitude}&limit=1&appid=${API_KEY}`;
+      const REVERSE_GEOCODING_URL = `https://api.openweathermap.org/geo/1.0/reverse?lat=${latitude}&lon=${longitude}&limit=1&appid=${API_KEY}`;
       fetch(REVERSE_GEOCODING_URL)
         .then((response) => response.json())
         .then((data) => {
