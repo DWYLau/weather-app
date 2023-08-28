@@ -11,7 +11,7 @@ Weather App for The Odin Project.
 3. Practice using async and await syntax.
 4. Practice using promises to fetch data.
 5. Practice using ES6 modules.
-6. Practice manipulating data from Openweather API.
+6. Practice manipulating data from OpenWeather API.
 7. Implement functions to get user location using Geolocation API.
 
 ## Languages
