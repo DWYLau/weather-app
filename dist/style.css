@@ -146,7 +146,7 @@ main {
 }
 
 .weather-location h1 {
-  font-size: 3.3rem;
+  font-size: 2.5rem;
   font-weight: bolder;
 }
 
@@ -165,8 +165,13 @@ main {
   height: 100%;
 }
 
+.detail h2 {
+  font-size: 1.2rem;
+}
+
 .detail h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  font-weight: bolder;
 }
 
 .weather-display {
@@ -214,7 +219,7 @@ main {
 
 .weather-forecast h1 {
   padding: 0rem 1rem 0.2rem 2rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .weather-cards {
@@ -232,7 +237,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  padding: 1rem;
+  padding: 0.6rem;
   min-width: 13rem;
   background-color: var(--second-bg-color);
   border-radius: 1rem;

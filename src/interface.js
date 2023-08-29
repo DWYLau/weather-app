@@ -37,6 +37,9 @@ function locateUser() {
 
 function changeInfo(name, country) {
   city.textContent = name;
+  if (city.textContent.length >= 20) {
+    city.style.fontSize = "2rem";
+  }
   countryName.textContent = country;
 }
 
