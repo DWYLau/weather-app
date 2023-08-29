@@ -30,6 +30,17 @@ function searchCity() {
   });
 }
 
+function inputEnterKey() {
+  location.addEventListener("keypress", function (event) {
+    if (event.keyCode === 13) {
+      const cityName = location.value.trim();
+      if (!cityName) return;
+      const GEOCODING_API = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=5&appid=${API_KEY}`;
+      getCityData(GEOCODING_API);
+    }
+  });
+}
+
 function locateUser() {
   const userLocationButton = document.getElementById("user-coords");
   userLocationButton.addEventListener("click", getUserCoordinates);
@@ -168,6 +179,7 @@ function removeError() {
 function loadFunctions() {
   locateUser();
   searchCity();
+  inputEnterKey();
   setDefaultCity();
 }
 
