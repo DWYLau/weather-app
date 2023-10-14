@@ -65,7 +65,7 @@ function filterForecastData(data) {
       return uniqueForecastDays.push(forecastDate);
     }
   });
-  sevenForecastDays.splice(0, 1);
+  if (sevenForecastDays.length > 5) sevenForecastDays.splice(0, 1);
   clearCards();
   sevenForecastDays.forEach((day) => {
     createCards(day);
