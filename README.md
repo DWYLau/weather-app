@@ -26,7 +26,7 @@ Weather App for The Odin Project.
 - OpenWeather API
 - Geolocation API
 
-## Attritute
+## Attributes
 
 - Local icons created by Freepik - Flaticon
 
